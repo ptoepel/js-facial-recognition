@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Face API</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            body{
+                margin:0;
+                padding:0;
+                width:100vw;
+                height:100vh;
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+                position:relative;
+            }
+            main{
+
+
+
+            }
+            header{
+                height:100px;
+                background:#333;
+                width:100%;
+
+            }
+            header h1{
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                color:white;
+                display: flex;
+                justify-content: center;
+            }
+            canvas{
+                top:100px; /* due to header height px */
+                position: absolute;
+            }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <h1>Face API</h1>
+        </header>
+        <main>
+        <video id="video" height="560" width="720" autoplay muted></video>
+        </main>
+        <footer>
+        </footer>
+        <script defer  src="face-api.min.js"></script>
+
+        <script  src="script.js" async defer></script>
+    </body>
+</html>
